@@ -1,16 +1,46 @@
 body {
-    color: white;
+    background-color: none;
+    width: 100vw;
+    height: 100vh;
+}
+body img {
+    width: 100%;
+    height: 100%;
 }
 
-#main-contents {
+.main {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-div {
     display: flex;
 }
-
-.main-contents__side {
+.introduction, .project, .locat, .people, .prised  {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 8vw;
+    height: 15vh;
+    border-radius: 10px;
+}
+.project {
+    margin-left: 20px;
+}
+.locat {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.people {
+    margin-right: 20px;
 }
 
-.main-contents__side a {
-    text-decoration: none;
-}
+
+/* 클릭했을때로 변경 할것, hover 시에는 아이콘만 살짝 커지게 ㄱㄱ */
